@@ -1,10 +1,10 @@
 package id.ac.polban.service;
 
 import id.ac.polban.model.Makanan;
-import id.ac.polban.model.AlatTulis;
+import id.ac.polban.model.Alattulis;
 import java.util.Scanner;
 
-public class koperasiService {
+public class koperasiservice {
     private static Scanner input = new Scanner(System.in); // static supaya bisa dipakai tanpa objek
 
     public static void mulai() {
@@ -13,9 +13,9 @@ public class koperasiService {
             new Makanan("Mie Goreng", 20000)
         };
 
-        AlatTulis[] menuAlatTulis = {
-            new AlatTulis("Bolpoin", 5000),
-            new AlatTulis("Pensil", 3000)
+        Alattulis[] menuAlatTulis = {
+            new Alattulis("Bolpoin", 5000),
+            new Alattulis("Pensil", 3000)
         };
 
         System.out.println("=== SELAMAT DATANG DI KOPERASI KELUARGA SEHAT ===");
