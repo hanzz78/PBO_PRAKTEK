@@ -1,4 +1,4 @@
-package PBOPRAKTEK2;
+package id.ac.polban.model;
 
 public class Alattulis {
     private String nama;
