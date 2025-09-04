@@ -4,7 +4,7 @@ import id.ac.polban.model.Makanan;
 import id.ac.polban.model.AlatTulis;
 import java.util.Scanner;
 
-public class KoperasiService {
+public class koperasiService {
     private static Scanner input = new Scanner(System.in); // static supaya bisa dipakai tanpa objek
 
     public static void mulai() {
@@ -63,3 +63,4 @@ public class KoperasiService {
         }
     }
 }
+//adf
