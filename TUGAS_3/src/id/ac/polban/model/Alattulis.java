@@ -1,23 +1,23 @@
 package id.ac.polban.model;
 
-public class Alattulis {
-    private String nama;
-    private double harga;
+public class AlatTulis {
+    private final String nama;
+    private final double harga;
 
-    public Alattulis(String nama, double harga){
+    public AlatTulis(String nama, double harga) {
         this.nama = nama;
         this.harga = harga;
     }
 
-    public String getNama(){
+    public String getNama() {
         return nama;
     }
 
-    public double getHarga(){
+    public double getHarga() {
         return harga;
     }
 
-    public void tampilkanInfo(int index){
-        System.out.println((index+1) + ". " + nama + " | Rp" + harga);
+    public void tampilkanInfo(int index) {
+        System.out.println((index + 1) + ". " + nama + " | Rp" + harga);
     }
 }
