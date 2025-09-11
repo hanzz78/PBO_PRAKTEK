@@ -1,13 +1,14 @@
-// EmployeeSortable.java
+package Exercise_3;
+
 public class EmployeeSortable extends Sortable {
     protected String name;
     protected double salary;
     protected int hireDay, hireMonth, hireYear;
 
     public EmployeeSortable(String n, double s, int d, int m, int y) {
-        name = n;
-        salary = s;
-        hireDay = d; hireMonth = m; hireYear = y;
+        this.name = n;
+        this.salary = s;
+        this.hireDay = d; this.hireMonth = m; this.hireYear = y;
     }
 
     public void raiseSalary(double byPercent) {
@@ -21,9 +22,7 @@ public class EmployeeSortable extends Sortable {
     @Override
     public int compare(Sortable b) {
         EmployeeSortable eb = (EmployeeSortable) b;
-        if (this.salary < eb.salary) return -1;
-        if (this.salary > eb.salary) return 1;
-        return 0;
+        return Double.compare(this.salary, eb.salary);
     }
 
     public void print() {

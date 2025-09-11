@@ -1,3 +1,5 @@
+package Exercise_2;
+
 public class TestShapes {
     public static void main(String[] args) {
         Shape s1 = new Shape();
@@ -15,7 +17,6 @@ public class TestShapes {
         System.out.println(sq);
         System.out.println(" area=" + sq.getArea() + " perimeter=" + sq.getPerimeter());
 
-        // test overridden setters
         sq.setWidth(5.0);
         System.out.println("after setWidth(5.0): " + sq);
     }

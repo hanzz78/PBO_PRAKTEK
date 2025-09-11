@@ -1,10 +1,11 @@
-// CircleShape.java
+package Exercise_2;
+
 public class CircleShape extends Shape {
     private double radius;
 
     public CircleShape() {
         super();
-        radius = 1.0;
+        this.radius = 1.0;
     }
 
     public CircleShape(double radius) {
@@ -18,7 +19,7 @@ public class CircleShape extends Shape {
     }
 
     public double getRadius() { return radius; }
-    public void setRadius(double r) { radius = r; }
+    public void setRadius(double r) { this.radius = r; }
 
     public double getArea() { return Math.PI * radius * radius; }
     public double getPerimeter() { return 2 * Math.PI * radius; }

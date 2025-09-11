@@ -1,4 +1,5 @@
-// ManagerSortable.java
+package Exercise_3;
+
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -7,7 +8,7 @@ public class ManagerSortable extends EmployeeSortable {
 
     public ManagerSortable(String n, double s, int d, int m, int y) {
         super(n, s, d, m, y);
-        secretaryName = "";
+        this.secretaryName = "";
     }
 
     @Override
@@ -20,4 +21,3 @@ public class ManagerSortable extends EmployeeSortable {
 
     public String getSecretaryName() { return secretaryName; }
 }
-

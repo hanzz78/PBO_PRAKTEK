@@ -1,8 +1,8 @@
-// Sortable.java
-public abstract class Sortable {
-    public abstract int compare(Sortable b); // negative if this < b, 0 if equal, positive if this > b
+package Exercise_3;
 
-    // Simple Shell sort using compare
+public abstract class Sortable {
+    public abstract int compare(Sortable b);
+
     public static void shell_sort(Sortable[] a) {
         int n = a.length;
         for (int gap = n/2; gap > 0; gap /= 2) {

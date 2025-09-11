@@ -1,4 +1,5 @@
-// Square.java
+package Exercise_2;
+
 public class Square extends Rectangle {
     public Square() {
         super(1.0, 1.0);
@@ -13,12 +14,12 @@ public class Square extends Rectangle {
     }
 
     public double getSide() { return getWidth(); }
+
     public void setSide(double side) {
-        setWidth(side);
-        setLength(side);
+        super.setWidth(side);
+        super.setLength(side);
     }
 
-    // maintain square geometry
     @Override
     public void setWidth(double w) {
         super.setWidth(w);

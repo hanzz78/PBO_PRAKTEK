@@ -1,4 +1,5 @@
-// Shape.java
+package Exercise_2;
+
 public class Shape {
     private String color;
     private boolean filled;
@@ -14,10 +15,10 @@ public class Shape {
     }
 
     public String getColor() { return color; }
-    public void setColor(String c) { color = c; }
+    public void setColor(String c) { this.color = c; }
 
     public boolean isFilled() { return filled; }
-    public void setFilled(boolean f) { filled = f; }
+    public void setFilled(boolean f) { this.filled = f; }
 
     @Override
     public String toString() {
