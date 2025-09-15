@@ -1,9 +1,9 @@
 package Exercise_1;
-
 public class Circle {
     private double radius;
     private String color;
 
+    // default
     public Circle() {
         this.radius = 1.0;
         this.color = "red";

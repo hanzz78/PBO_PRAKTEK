@@ -1,20 +1,19 @@
 package Exercise_1;
-
 public class Cylinder extends Circle {
     private double height;
 
     public Cylinder() {
-        super();
+        super(); // Circle()
         this.height = 1.0;
     }
 
     public Cylinder(double height) {
-        super();
+        super(); // Circle()
         this.height = height;
     }
 
     public Cylinder(double radius, double height) {
-        super(radius);
+        super(radius); // Circle(radius)
         this.height = height;
     }
 
@@ -28,17 +27,19 @@ public class Cylinder extends Circle {
     }
 
     public void setHeight(double h) {
-        this.height = h;
+        height = h;
     }
 
+    // Override: surface area of the cylinder
     @Override
     public double getArea() {
         double r = getRadius();
         double baseArea = super.getArea();
         double lateral = 2 * Math.PI * r * height;
-        return lateral + 2 * baseArea;
+        return lateral + 2 * baseArea; // surface area
     }
 
+    // getVolume must use base area (circle area), so call super.getArea()
     public double getVolume() {
         return super.getArea() * height;
     }
